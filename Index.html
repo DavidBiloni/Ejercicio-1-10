@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos Java Script</title>
+</head>
+<body>
+    <h1>Fundamentos Java Script</h1>
+    
+    <!--[]-->
+
+    <script>
+     //Ejercicios 1 de 10 
+
+//Ejericio 1 - Funcion para devolver la cantidad de caracteres de una cadena
+
+     function cadena(){
+         let texto = "Holaminombreesdavidddd";
+         return texto.length
+     }
+        console.log(`La cantidad de caracteres es de`,cadena());
+
+//Funcion para devolver la cantidad de caracteres de un arreglo
+
+     function CantArreglo(){
+            const arreglo = ["a","b","c","d","e","f","g","h"];
+            return arreglo.length
+        }
+        console.log(`La cantidad de caracteres del arreglo es de`, CantArreglo(), `caracteres` )
+      
+//Ejercico 2 - Funcion cadena de texto trozada
+        function cadenaTrozada(){
+            let Cadena = "Hola mi nombre es David";
+            // Muestra "Hola"
+            console.log(`Esta es una cadena trozada en cuatro caracteres el texto original es`,Cadena, `y el trozado es`,Cadena.substring(0,4));
+        }
+
+        cadenaTrozada();
+
+//Ejercicio - 3 Funcion para dividir una cadena en un array
+
+        function dividirCadena(Cadena,Separador){
+            let arraydeCadenas = Cadena.split(Separador);
+            
+            for (let i=0; i < arraydeCadenas.length; i++) {
+            console.log(arraydeCadenas[i] + " / ");
+        }
+        }
+        let CadenaVerso = "Hola mi nombre es David Biloni",
+            espacio = " ";
+
+            dividirCadena(CadenaVerso,espacio);
+
+//Ejercicio 4 - Funcion Para repetir cadena
+        function repetirCadena(){
+            let texto = "Hola Mundo";
+            return texto.repeat(4);
+        }
+            console.log(repetirCadena());
+
+    </script>
+ </body>
+</html>
